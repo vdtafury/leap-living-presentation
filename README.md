@@ -47,6 +47,26 @@ The folder is a static site. It can be dropped onto any static host
 (Netlify, GitHub Pages, Cloudflare Pages, S3) with no configuration. There is no
 backend, no form handling and no analytics.
 
+## Brand palette
+
+Approved by the client (2026-11). The site is built on Teal + Neutral + White.
+
+| Role | Value |
+|---|---|
+| Primary Teal — brand, buttons | `#3B9EA1` |
+| Secondary Teal — accents, links | `#287F82` |
+| Dark Teal — header, featured sections | `#185C5E` |
+| White — primary surface | `#FFFFFF` |
+| Page Background | `#F5F7F6` |
+| Neutral Grey — dividers | `#DDDDDD` |
+| Headings | `#252B2B` |
+| Body Text | `#626B69` |
+| Borders | `#E2E7E5` |
+
+Distribution guidance: ~55% white/off-white, ~20% charcoal/dark, ~15% teal,
+~10% grey. Light backgrounds carry the page; Dark Teal is reserved for the
+header and a few featured sections.
+
 ## Source of truth
 
 The Figma file remains the source of truth. This presentation is the review and

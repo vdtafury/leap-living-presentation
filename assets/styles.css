@@ -4,18 +4,22 @@
    ========================================================================== */
 
 :root {
-  --ink: #101415;
-  --charcoal: #252b2b;
-  --paper: #f5f7f6;
-  --white: #ffffff;
+  /* Brand */
   --teal: #3b9ea1;
   --teal-deep: #287f82;
-  --teal-text: #1f6f72;
-  --teal-ink: #0d3a3c;
-  --line: #dde4e2;
-  --line-strong: #c3cdcb;
-  --muted: #5b6867;
-  --muted-dark: #9fb0ae;
+  --teal-dark: #185c5e;
+  --white: #ffffff;
+  --neutral: #dddddd;
+
+  /* UI */
+  --paper: #f5f7f6;
+  --ink: #252b2b;
+  --charcoal: #252b2b;
+  --muted: #626b69;
+  --muted-dark: #c3cecc;
+  --line: #e2e7e5;
+  --line-strong: #c8cfcd;
+  --teal-text: #185c5e;
 
   --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
@@ -157,7 +161,7 @@ a {
   position: sticky;
   top: 0;
   z-index: 90;
-  background: rgba(16, 20, 21, 0.92);
+  background: rgba(24, 92, 94, 0.92);
   color: var(--white);
   backdrop-filter: saturate(160%) blur(12px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -301,7 +305,7 @@ a {
 .pagehead {
   padding-bottom: clamp(22px, 3vw, 32px);
   margin-bottom: clamp(24px, 3.4vw, 38px);
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid var(--neutral);
 }
 
 .pagehead .eyebrow {
@@ -332,11 +336,11 @@ a {
 
 .section {
   padding: clamp(48px, 7vw, 96px) 0;
-  border-top: 1px solid var(--line);
+  border-top: 1px solid var(--neutral);
 }
 
 .section--dark {
-  background: var(--charcoal);
+  background: var(--teal-dark);
   color: var(--white);
   border-top-color: rgba(255, 255, 255, 0.08);
 }
@@ -377,7 +381,7 @@ a {
 }
 
 .section--dark .section__index {
-  color: #8fd0d1;
+  color: #9fd9da;
 }
 
 .section__aside {
@@ -418,7 +422,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 2px;
-  border-left: 1px solid var(--line);
+  border-left: 1px solid var(--neutral);
 }
 
 .index__list a {
@@ -831,13 +835,54 @@ a {
   padding: 22px;
 }
 
+.ds__card--wide {
+  grid-column: 1 / -1;
+}
+
 .ds__label {
   font-family: var(--mono);
   font-size: 10.5px;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: #8fd0d1;
+  color: #9fd9da;
   margin-bottom: 16px;
+}
+
+.ratio {
+  display: flex;
+  gap: 4px;
+  height: 62px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.ratio span {
+  display: flex;
+  align-items: flex-end;
+  padding: 8px 10px;
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  line-height: 1.35;
+}
+
+.ds__note {
+  margin-top: 14px;
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: var(--muted-dark);
+}
+
+/* On dark teal the outline variant must read as a light button. */
+.section--dark .btn--outline {
+  border-color: rgba(255, 255, 255, 0.35);
+  color: var(--white);
+}
+
+.section--dark .btn--outline:hover {
+  border-color: var(--white);
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .swatches {
@@ -907,7 +952,7 @@ a {
   font-size: 15px;
   font-weight: 400;
   line-height: 1.6;
-  color: #c8d3d1;
+  color: var(--muted-dark);
 }
 
 .type-row__sample--label {
@@ -915,7 +960,7 @@ a {
   font-size: 11px;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: #8fd0d1;
+  color: #9fd9da;
 }
 
 .type-row__meta {
@@ -945,7 +990,7 @@ a {
   padding-bottom: 11px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   font-size: 13px;
-  color: #c8d3d1;
+  color: var(--muted-dark);
 }
 
 .spec-list li:last-child {
@@ -1039,8 +1084,8 @@ a {
 /* ---------- Footer ---------- */
 
 .footer {
-  background: var(--ink);
-  color: #9fb0ae;
+  background: var(--teal-dark);
+  color: var(--muted-dark);
   padding: clamp(32px, 5vw, 52px) 0;
 }
 
@@ -1085,7 +1130,7 @@ a {
   align-items: center;
   justify-content: center;
   padding: clamp(14px, 3vw, 40px);
-  background: rgba(10, 13, 14, 0.94);
+  background: rgba(24, 92, 94, 0.96);
   backdrop-filter: blur(8px);
 }
 
