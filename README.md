@@ -4,6 +4,8 @@ A responsive HTML presentation of the complete LEAP LIVING web design: six core
 pages, a component and state library, the design system, and the responsive
 strategy.
 
+**Live:** https://vdtafury.github.io/leap-living-presentation/
+
 ## Open it
 
 Everything is local — no build step, no dependencies, no network calls.
