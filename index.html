@@ -36,7 +36,7 @@
         <button class="btn btn--ghost btn--sm" id="present-toggle" type="button" aria-pressed="false">
           Presentation mode
         </button>
-        <a class="btn btn--solid btn--sm" href="#next">Next steps</a>
+        <a class="btn btn--solid btn--sm" href="#next">Start review</a>
       </div>
     </div>
   </header>
@@ -45,16 +45,23 @@
 
     <!-- ============================== Hero ============================== -->
     <section class="hero" id="top">
+      <div class="hero__bg" aria-hidden="true">
+        <img src="assets/dubai-hero.webp" alt="" width="2400" height="1800"
+             fetchpriority="high" decoding="async">
+      </div>
+
       <div class="container hero__inner">
-        <p class="eyebrow hero__eyebrow">Confidential · For client review</p>
+        <div class="hero__content">
+          <p class="eyebrow hero__eyebrow">Confidential · For client review</p>
 
-        <h1>LEAP LIVING — <em>Real&nbsp;Estate Consultancy</em></h1>
+          <h1>LEAP LIVING<br><em>Real Estate Consultancy</em></h1>
 
-        <p class="hero__lede">
-          The complete web design for a premium Dubai real estate consultancy: six core pages,
-          a full component and state library, one responsive system from 1440px to 390px, and the
-          design language that holds it together.
-        </p>
+          <p class="hero__lede">
+            The complete web design for a premium Dubai real estate consultancy: six core pages,
+            a full component and state library, one responsive system from 1440px to 390px, and
+            the design language that holds it together.
+          </p>
+        </div>
 
         <dl class="hero__meta">
           <div><dt>Client</dt><dd>Leap Living Real Estate Consultancy</dd></div>
@@ -65,24 +72,26 @@
         </dl>
 
         <div class="hero__stats">
-          <div>
+          <div class="stat">
             <span class="stat__num">16</span>
             <span class="stat__label">Screens designed</span>
           </div>
-          <div>
+          <div class="stat">
             <span class="stat__num">6<span> / </span>3</span>
             <span class="stat__label">Pages / Breakpoints</span>
           </div>
-          <div>
+          <div class="stat">
             <span class="stat__num">26</span>
             <span class="stat__label">Assets delivered</span>
           </div>
-          <div>
+          <div class="stat">
             <span class="stat__num">100<span>%</span></span>
             <span class="stat__label">States designed</span>
           </div>
         </div>
       </div>
+
+      <p class="hero__credit">Downtown Dubai at night — Wikimedia Commons (public domain)</p>
     </section>
 
     <!-- ========================= How to review ========================= -->

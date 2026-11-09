@@ -52,3 +52,10 @@ backend, no form handling and no analytics.
 The Figma file remains the source of truth. This presentation is the review and
 sign-off artefact; if a screen changes in Figma, re-export it into
 `assets/screens/` (see `tools/optimise.py`).
+
+## Image credit
+
+`assets/dubai-hero.webp` — "Dubai Marina and skyline from Le Royal Méridien
+Beach Resort and Spa at night", Wikimedia Commons, public domain. Locally
+processed (shadow lift, colour grade) and self-hosted; no external request is
+made at runtime.
