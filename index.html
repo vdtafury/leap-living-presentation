@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LEAP LIVING — Design Presentation</title>
+  <meta name="description" content="Design presentation for the LEAP LIVING real estate consultancy website: core pages, component states, responsive strategy and design system.">
+  <meta name="theme-color" content="#101415">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%233b9ea1'/%3E%3Ctext x='16' y='22' font-family='Arial,sans-serif' font-size='17' font-weight='700' text-anchor='middle' fill='%23101415'%3EL%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============================ Topbar ============================ -->
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="#top" aria-label="LEAP LIVING — back to top">
+        <span class="brand__mark" aria-hidden="true">L</span>
+        <span class="brand__text">
+          <span class="brand__name">LEAP LIVING</span>
+          <span class="brand__sub">Design presentation</span>
+        </span>
+      </a>
+
+      <nav class="topbar__nav" aria-label="Sections">
+        <a href="#pages" class="is-active">Core pages</a>
+        <a href="#states">Components</a>
+        <a href="#system">Design system</a>
+        <a href="#strategy">Responsive</a>
+        <a href="#next">Next steps</a>
+      </nav>
+
+      <div class="topbar__actions">
+        <button class="btn btn--ghost btn--sm" id="present-toggle" type="button" aria-pressed="false">
+          Presentation mode
+        </button>
+        <a class="btn btn--solid btn--sm" href="#next">Next steps</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================== Hero ============================== -->
+    <section class="hero" id="top">
+      <div class="container hero__inner">
+        <p class="eyebrow hero__eyebrow">Confidential · For client review</p>
+
+        <h1>LEAP LIVING — <em>Real&nbsp;Estate Consultancy</em></h1>
+
+        <p class="hero__lede">
+          The complete web design for a premium Dubai real estate consultancy: six core pages,
+          a full component and state library, one responsive system from 1440px to 390px, and the
+          design language that holds it together.
+        </p>
+
+        <dl class="hero__meta">
+          <div><dt>Client</dt><dd>Leap Living Real Estate Consultancy</dd></div>
+          <div><dt>Sector</dt><dd>Real estate advisory · Off-market</dd></div>
+          <div><dt>Market</dt><dd>Dubai, United Arab Emirates</dd></div>
+          <div><dt>Scope</dt><dd>Web design · UI / UX · Responsive</dd></div>
+          <div><dt>Status</dt><dd>Ready for review and sign-off</dd></div>
+        </dl>
+
+        <div class="hero__stats">
+          <div>
+            <span class="stat__num">16</span>
+            <span class="stat__label">Screens designed</span>
+          </div>
+          <div>
+            <span class="stat__num">6<span> / </span>3</span>
+            <span class="stat__label">Pages / Breakpoints</span>
+          </div>
+          <div>
+            <span class="stat__num">26</span>
+            <span class="stat__label">Assets delivered</span>
+          </div>
+          <div>
+            <span class="stat__num">100<span>%</span></span>
+            <span class="stat__label">States designed</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= How to review ========================= -->
+    <section class="section section--tight">
+      <div class="container">
+        <div class="strategy" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr))">
+          <div class="strategy__item">
+            <span class="mono">01 · Navigate</span>
+            <h3>Use the index</h3>
+            <p>Jump to any screen from the index on the left, or the section links at the top.</p>
+          </div>
+          <div class="strategy__item">
+            <span class="mono">02 · Switch breakpoints</span>
+            <h3>Desktop, tablet, mobile</h3>
+            <p>Each screen has a breakpoint switch. Scroll inside the frame to explore the full page.</p>
+          </div>
+          <div class="strategy__item">
+            <span class="mono">03 · Inspect</span>
+            <h3>Click to expand</h3>
+            <p>Any screen opens full size in a viewer. Arrow keys move between screens.</p>
+          </div>
+          <div class="strategy__item">
+            <span class="mono">04 · Present</span>
+            <h3>Presentation mode</h3>
+            <p>Strips the review chrome for screen sharing, leaving only the work on show.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================== Core pages ========================== -->
+    <section class="section" id="pages">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <p class="section__index">01 / Core pages</p>
+            <h2 class="section__title">The six pages that carry the business</h2>
+          </div>
+          <p class="section__aside">
+            Every page is designed at each breakpoint it will actually be used at. Nothing is left
+            to be worked out in development.
+          </p>
+        </div>
+
+        <div class="layout">
+          <aside class="index" id="index-pages" aria-label="Core pages index"></aside>
+          <div class="screens" id="pages-host"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== Components and states ====================== -->
+    <section class="section" id="states">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <p class="section__index">02 / Component &amp; state library</p>
+            <h2 class="section__title">The parts people actually touch</h2>
+          </div>
+          <p class="section__aside">
+            Filters, drawers, forms and empty states are designed as first-class screens — the
+            moments where a premium product usually falls back to browser defaults.
+          </p>
+        </div>
+
+        <div class="layout">
+          <aside class="index" id="index-states" aria-label="Component index"></aside>
+          <div class="screens" id="states-host"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= Design system ========================= -->
+    <section class="section section--dark" id="system">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <p class="section__index">03 / Design system</p>
+            <h2 class="section__title">One language, sampled from the work</h2>
+          </div>
+          <p class="section__aside">
+            These values are taken directly from the screens above — not invented alongside them.
+          </p>
+        </div>
+
+        <div class="ds">
+          <div class="ds__card">
+            <p class="ds__label">Colour</p>
+            <div class="swatches">
+              <div class="swatch">
+                <span class="swatch__chip" style="background:#101415"></span>
+                <span><span class="swatch__name">Ink</span><br><span class="swatch__hex">#101415</span></span>
+              </div>
+              <div class="swatch">
+                <span class="swatch__chip" style="background:#252b2b"></span>
+                <span><span class="swatch__name">Charcoal</span><br><span class="swatch__hex">#252B2B</span></span>
+              </div>
+              <div class="swatch">
+                <span class="swatch__chip" style="background:#3b9ea1"></span>
+                <span><span class="swatch__name">Teal — primary</span><br><span class="swatch__hex">#3B9EA1</span></span>
+              </div>
+              <div class="swatch">
+                <span class="swatch__chip" style="background:#287f82"></span>
+                <span><span class="swatch__name">Teal — deep</span><br><span class="swatch__hex">#287F82</span></span>
+              </div>
+              <div class="swatch">
+                <span class="swatch__chip" style="background:#f5f7f6"></span>
+                <span><span class="swatch__name">Paper</span><br><span class="swatch__hex">#F5F7F6</span></span>
+              </div>
+              <div class="swatch">
+                <span class="swatch__chip" style="background:#dde4e2"></span>
+                <span><span class="swatch__name">Hairline</span><br><span class="swatch__hex">#DDE4E2</span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="ds__card">
+            <p class="ds__label">Typography</p>
+            <div class="type-row">
+              <div class="type-row__item">
+                <span class="type-row__sample type-row__sample--display">Certainty</span>
+                <span class="type-row__meta">Display · 600 · -0.035em</span>
+              </div>
+              <div class="type-row__item">
+                <span class="type-row__sample type-row__sample--title">A disciplined approach</span>
+                <span class="type-row__meta">Title · 640 · -0.025em</span>
+              </div>
+              <div class="type-row__item">
+                <span class="type-row__sample type-row__sample--body">Space, light and precise typography carry the premium position. Restraint over decoration.</span>
+                <span class="type-row__meta">Body · 400 · 1.6 line-height</span>
+              </div>
+              <div class="type-row__item">
+                <span class="type-row__sample type-row__sample--label">Advisory methodology</span>
+                <span class="type-row__meta">Label · Mono · 0.16em caps</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="ds__card">
+            <p class="ds__label">Action hierarchy</p>
+            <div class="btn-row">
+              <span class="btn btn--solid">Primary action</span>
+              <span class="btn btn--outline">Secondary</span>
+              <span class="btn btn--ghost" style="color:#eef3f2;border-color:rgba(255,255,255,.25)">Ghost</span>
+            </div>
+            <ul class="spec-list">
+              <li>Primary <b>One per view</b></li>
+              <li>Secondary <b>Never competes</b></li>
+              <li>Focus <b>2px ring · 3px offset</b></li>
+              <li>Touch target <b>≥ 44 × 44px</b></li>
+              <li>Motion <b>≤ 0.6s · eased</b></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= Responsive strategy ======================= -->
+    <section class="section" id="strategy">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <p class="section__index">04 / Responsive strategy</p>
+            <h2 class="section__title">Designed for the device, not shrunk for it</h2>
+          </div>
+          <p class="section__aside">
+            Four widths were designed deliberately. The mobile layouts are not stacked desktop
+            layouts — the tasks, the order and the reach change.
+          </p>
+        </div>
+
+        <div class="strategy">
+          <div class="strategy__item">
+            <span class="mono">1440px · Desktop</span>
+            <h3>Full canvas</h3>
+            <p>Multi-column grids, side drawers, hover-available detail. Used for the advisory desk and buyer research.</p>
+          </div>
+          <div class="strategy__item">
+            <span class="mono">1024px · Small desktop</span>
+            <h3>Condensed grid</h3>
+            <p>Columns reduce, drawers remain drawers, and the primary action stays in the first viewport.</p>
+          </div>
+          <div class="strategy__item">
+            <span class="mono">834px · Tablet</span>
+            <h3>Two columns, full tasks</h3>
+            <p>Property grids settle at two columns; filters move to a sheet without losing state.</p>
+          </div>
+          <div class="strategy__item">
+            <span class="mono">390px · Mobile</span>
+            <h3>Thumb-first</h3>
+            <p>Single column, sticky primary action, sheets instead of drawers, and every target inside reach.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================== Next steps ========================== -->
+    <section class="section" id="next">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <p class="section__index">05 / Next steps</p>
+            <h2 class="section__title">From sign-off to build</h2>
+          </div>
+          <p class="section__aside">
+            The design is complete and self-consistent. What remains is confirmation and handover.
+          </p>
+        </div>
+
+        <div class="next">
+          <div class="next__row">
+            <span class="next__num">01</span>
+            <div class="next__body">
+              <h3>Review and confirm the scope</h3>
+              <p>Walk the pages and states above with the team. Flag anything that should change before it becomes a development cost.</p>
+            </div>
+          </div>
+          <div class="next__row">
+            <span class="next__num">02</span>
+            <div class="next__body">
+              <h3>Confirm the responsive breakpoints</h3>
+              <p>Approve the four widths as the build target so development does not have to decide layout questions on its own.</p>
+            </div>
+          </div>
+          <div class="next__row">
+            <span class="next__num">03</span>
+            <div class="next__body">
+              <h3>Hand over the asset set</h3>
+              <p>Exports are named, sized and organised per breakpoint. The Figma file stays the source of truth for anything not shown here.</p>
+            </div>
+          </div>
+          <div class="next__row">
+            <span class="next__num">04</span>
+            <div class="next__body">
+              <h3>Build, then compare against this</h3>
+              <p>This presentation becomes the acceptance reference: spacing, type, colour and state behaviour are all defined above.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================ Footer ============================ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="brand__mark" aria-hidden="true">L</span>
+        <div>
+          <span class="brand__name" style="color:#eef3f2">LEAP LIVING</span>
+          <p class="footer__note">
+            Certainty through precision. Design presentation for client review — screens shown
+            are the approved visual direction.
+          </p>
+        </div>
+      </div>
+      <div class="footer__meta">
+        <span>Leap Living Real Estate Consultancy</span>
+        <span>Dubai · United Arab Emirates</span>
+        <span>Design review · 2026</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================ Lightbox ============================ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Screen viewer">
+    <figure class="lightbox__figure">
+      <div class="lightbox__stage">
+        <img id="lightbox-img" alt="">
+      </div>
+      <div class="lightbox__bar">
+        <span id="lightbox-title"></span>
+        <span id="lightbox-meta"></span>
+        <div class="lightbox__controls">
+          <button class="lightbox__btn" id="lightbox-prev" type="button" aria-label="Previous screen">←</button>
+          <button class="lightbox__btn" id="lightbox-next" type="button" aria-label="Next screen">→</button>
+          <button class="lightbox__btn" id="lightbox-close" type="button" aria-label="Close viewer">✕</button>
+        </div>
+      </div>
+    </figure>
+  </div>
+
+  <!-- ====================== No-script fallback ====================== -->
+  <noscript>
+    <div class="container" style="padding:40px 20px">
+      <h2 style="color:#fff;margin-bottom:18px">Interactive view unavailable</h2>
+      <p style="color:#9fb0ae;max-width:70ch;margin-bottom:24px">
+        This presentation needs JavaScript for the breakpoint switcher and viewer.
+        The full screen set is listed below.
+      </p>
+      <div style="display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
+        <figure style="background:#fff;border-radius:10px;overflow:hidden">
+          <img src="assets/screens/home-desktop.webp" alt="Homepage desktop" style="width:100%">
+          <figcaption style="padding:10px;font-family:monospace;font-size:12px;color:#5b6867">Homepage · Desktop</figcaption>
+        </figure>
+        <figure style="background:#fff;border-radius:10px;overflow:hidden">
+          <img src="assets/screens/home-mobile.webp" alt="Homepage mobile" style="width:100%">
+          <figcaption style="padding:10px;font-family:monospace;font-size:12px;color:#5b6867">Homepage · Mobile</figcaption>
+        </figure>
+        <figure style="background:#fff;border-radius:10px;overflow:hidden">
+          <img src="assets/screens/buy-desktop.webp" alt="Buy page desktop" style="width:100%">
+          <figcaption style="padding:10px;font-family:monospace;font-size:12px;color:#5b6867">Buy · Desktop</figcaption>
+        </figure>
+        <figure style="background:#fff;border-radius:10px;overflow:hidden">
+          <img src="assets/screens/buy-tablet.webp" alt="Buy page tablet" style="width:100%">
+          <figcaption style="padding:10px;font-family:monospace;font-size:12px;color:#5b6867">Buy · Tablet</figcaption>
+        </figure>
+        <figure style="background:#fff;border-radius:10px;overflow:hidden">
+          <img src="assets/screens/buy-mobile.webp" alt="Buy page mobile" style="width:100%">
+          <figcaption style="padding:10px;font-family:monospace;font-size:12px;color:#5b6867">Buy · Mobile</figcaption>
+        </figure>
+        <figure style="background:#fff;border-radius:10px;overflow:hidden">
+          <img src="assets/screens/rent-desktop.webp" alt="Rent page desktop" style="width:100%">
+          <figcaption style="padding:10px;font-family:monospace;font-size:12px;color:#5b6867">Rent · Desktop</figcaption>
+        </figure>
+        <figure style="background:#fff;border-radius:10px;overflow:hidden">
+          <img src="assets/screens/rent-mobile.webp" alt="Rent page mobile" style="width:100%">
+          <figcaption style="padding:10px;font-family:monospace;font-size:12px;color:#5b6867">Rent · Mobile</figcaption>
+        </figure>
+        <figure style="background:#fff;border-radius:10px;overflow:hidden">
+          <img src="assets/screens/sell-desktop.webp" alt="Sell page desktop" style="width:100%">
+          <figcaption style="padding:10px;font-family:monospace;font-size:12px;color:#5b6867">Sell · Desktop</figcaption>
+        </figure>
+        <figure style="background:#fff;border-radius:10px;overflow:hidden">
+          <img src="assets/screens/sell-mobile.webp" alt="Sell page mobile" style="width:100%">
+          <figcaption style="padding:10px;font-family:monospace;font-size:12px;color:#5b6867">Sell · Mobile</figcaption>
+        </figure>
+        <figure style="background:#fff;border-radius:10px;overflow:hidden">
+          <img src="assets/screens/about-desktop.webp" alt="About page desktop" style="width:100%">
+          <figcaption style="padding:10px;font-family:monospace;font-size:12px;color:#5b6867">About · Desktop</figcaption>
+        </figure>
+        <figure style="background:#fff;border-radius:10px;overflow:hidden">
+          <img src="assets/screens/contact-desktop.webp" alt="Contact page desktop" style="width:100%">
+          <figcaption style="padding:10px;font-family:monospace;font-size:12px;color:#5b6867">Contact · Desktop</figcaption>
+        </figure>
+      </div>
+    </div>
+  </noscript>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
