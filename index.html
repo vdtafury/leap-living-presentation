@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>LEAP LIVING — Design Presentation</title>
   <meta name="description" content="Design presentation for the LEAP LIVING real estate consultancy website: core pages, component states, responsive strategy and design system.">
-  <meta name="theme-color" content="#101415">
+  <meta name="theme-color" content="#185C5E">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%233b9ea1'/%3E%3Ctext x='16' y='22' font-family='Arial,sans-serif' font-size='17' font-weight='700' text-anchor='middle' fill='%23101415'%3EL%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="assets/styles.css">
 </head>
@@ -28,6 +28,7 @@
         <a href="#pages" class="is-active">Core pages</a>
         <a href="#states">Components</a>
         <a href="#system">Design system</a>
+        <a href="#final">Final look</a>
         <a href="#strategy">Responsive</a>
         <a href="#next">Next steps</a>
       </nav>
@@ -203,7 +204,7 @@
             <div class="type-row">
               <div class="type-row__item">
                 <span class="type-row__sample type-row__sample--display">Certainty</span>
-                <span class="type-row__meta">Display · 600 · -0.035em</span>
+                <span class="type-row__meta">Display · 680 · -0.035em</span>
               </div>
               <div class="type-row__item">
                 <span class="type-row__sample type-row__sample--title">A disciplined approach</span>
@@ -239,12 +240,33 @@
       </div>
     </section>
 
+    <!-- ==================== Final visual direction ==================== -->
+    <section class="section" id="final">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <p class="section__index">04 / Final visual direction</p>
+            <h2 class="section__title">The finished website in full colour</h2>
+          </div>
+          <p class="section__aside">
+            Seven art-directed views showing how photography, typography and the teal palette come
+            together across the six core pages plus the Property Details view.
+          </p>
+        </div>
+
+        <div class="layout">
+          <aside class="index" id="index-final" aria-label="Final visual direction index"></aside>
+          <div class="final-grid" id="final-host"></div>
+        </div>
+      </div>
+    </section>
+
     <!-- ======================= Responsive strategy ======================= -->
     <section class="section" id="strategy">
       <div class="container">
         <div class="section__head">
           <div>
-            <p class="section__index">04 / Responsive strategy</p>
+            <p class="section__index">05 / Responsive strategy</p>
             <h2 class="section__title">Designed for the device, not shrunk for it</h2>
           </div>
           <p class="section__aside">
@@ -283,7 +305,7 @@
       <div class="container">
         <div class="section__head">
           <div>
-            <p class="section__index">05 / Next steps</p>
+            <p class="section__index">06 / Next steps</p>
             <h2 class="section__title">From sign-off to build</h2>
           </div>
           <p class="section__aside">
@@ -346,6 +368,10 @@
       </div>
     </div>
   </footer>
+
+  <button class="present-exit" id="present-exit" type="button" aria-label="Exit presentation mode">
+    Exit presentation · Esc
+  </button>
 
   <!-- ============================ Lightbox ============================ -->
   <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Screen viewer">

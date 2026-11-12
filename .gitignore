@@ -7,3 +7,6 @@ Thumbs.db
 # Local env
 .env
 .env.local
+
+# Raw source assets (optimised WebPs live in assets/screens/)
+photo/

@@ -26,8 +26,9 @@
         "<strong>Leadership and developer partners</strong> act as validation before the first conversation."
       ],
       devices: [
-        { k: "desktop", file: "home-desktop.webp", w: 1440, h: 3656, label: "Desktop · 1440" },
-        { k: "mobile", file: "home-mobile.webp", w: 390, h: 7298, label: "Mobile · 390" }
+        { k: "desktop", file: "home-desktop.webp", w: 1440, h: 4818, label: "Desktop · 1440" },
+        { k: "mobile", file: "home-mobile.webp", w: 390, h: 9677, label: "Mobile · 390" },
+        { k: "final", file: "final-home.webp", w: 1440, h: 1929, label: "Final look · 1440" }
       ]
     },
     {
@@ -44,8 +45,9 @@
         "<strong>Mobile reflows</strong> the story into one column without losing hierarchy."
       ],
       devices: [
-        { k: "desktop", file: "about-desktop.webp", w: 1440, h: 4032, label: "Desktop · 1440" },
-        { k: "mobile", file: "about-mobile.webp", w: 390, h: 8771, label: "Mobile · 390" }
+        { k: "desktop", file: "about-desktop.webp", w: 1440, h: 4047, label: "Desktop · 1440" },
+        { k: "mobile", file: "about-mobile.webp", w: 390, h: 9061, label: "Mobile · 390" },
+        { k: "final", file: "final-about.webp", w: 1440, h: 1929, label: "Final look · 1440" }
       ]
     },
     {
@@ -65,7 +67,8 @@
       devices: [
         { k: "desktop", file: "buy-desktop.webp", w: 1440, h: 4382, label: "Desktop · 1440" },
         { k: "tablet", file: "buy-tablet.webp", w: 834, h: 6234, label: "Tablet · 834" },
-        { k: "mobile", file: "buy-mobile.webp", w: 390, h: 8778, label: "Mobile · 390" }
+        { k: "mobile", file: "buy-mobile.webp", w: 390, h: 8778, label: "Mobile · 390" },
+        { k: "final", file: "final-buy.webp", w: 1440, h: 1929, label: "Final look · 1440" }
       ]
     },
     {
@@ -83,7 +86,8 @@
       ],
       devices: [
         { k: "desktop", file: "rent-desktop.webp", w: 1440, h: 4210, label: "Desktop · 1440" },
-        { k: "mobile", file: "rent-mobile.webp", w: 390, h: 9585, label: "Mobile · 390" }
+        { k: "mobile", file: "rent-mobile.webp", w: 390, h: 9585, label: "Mobile · 390" },
+        { k: "final", file: "final-rent.webp", w: 1440, h: 1929, label: "Final look · 1440" }
       ]
     },
     {
@@ -101,7 +105,8 @@
       ],
       devices: [
         { k: "desktop", file: "sell-desktop.webp", w: 1440, h: 4168, label: "Desktop · 1440" },
-        { k: "mobile", file: "sell-mobile.webp", w: 390, h: 8016, label: "Mobile · 390" }
+        { k: "mobile", file: "sell-mobile.webp", w: 390, h: 8016, label: "Mobile · 390" },
+        { k: "final", file: "final-sell.webp", w: 1440, h: 1929, label: "Final look · 1440" }
       ]
     },
     {
@@ -119,7 +124,8 @@
       ],
       devices: [
         { k: "desktop", file: "contact-desktop.webp", w: 1440, h: 2723, label: "Desktop · 1440" },
-        { k: "mobile", file: "contact-mobile.webp", w: 390, h: 4740, label: "Mobile · 390" }
+        { k: "mobile", file: "contact-mobile.webp", w: 390, h: 4740, label: "Mobile · 390" },
+        { k: "final", file: "final-contact.webp", w: 1440, h: 1929, label: "Final look · 1440" }
       ]
     }
   ];
@@ -300,6 +306,86 @@
     }
   ];
 
+  var FINALS = [
+    {
+      id: "home",
+      num: "01",
+      title: "Homepage",
+      url: "leapliving.ae",
+      file: "final-home.webp",
+      w: 1440,
+      h: 1929,
+      pageRef: "screen-home",
+      desc: "Dubai skyline hero, search-first Buy / Rent / Commercial bar, featured properties, mortgage calculator and client trust."
+    },
+    {
+      id: "about",
+      num: "02",
+      title: "About Page",
+      url: "leapliving.ae/about",
+      file: "final-about.webp",
+      w: 1440,
+      h: 1929,
+      pageRef: "screen-about",
+      desc: "Advisory methodology, founder-led leadership narrative and institutional developer partners in full visual fidelity."
+    },
+    {
+      id: "buy",
+      num: "03",
+      title: "Buy Page",
+      url: "leapliving.ae/buy",
+      file: "final-buy.webp",
+      w: 1440,
+      h: 1929,
+      pageRef: "screen-buy",
+      desc: "Property catalogue with multi-column photography, currency switching and direct Private Dossier triggers."
+    },
+    {
+      id: "rent",
+      num: "04",
+      title: "Rent Page",
+      url: "leapliving.ae/rent",
+      file: "final-rent.webp",
+      w: 1440,
+      h: 1929,
+      pageRef: "screen-rent",
+      desc: "Residential leasing showcase with monthly / annual pricing clarity and instant tour booking."
+    },
+    {
+      id: "sell",
+      num: "05",
+      title: "Sell Page",
+      url: "leapliving.ae/sell",
+      file: "final-sell.webp",
+      w: 1440,
+      h: 1929,
+      pageRef: "screen-sell",
+      desc: "Four-stage seller mandate journey with confidential valuation intake and transparent timeline."
+    },
+    {
+      id: "contact",
+      num: "06",
+      title: "Contact Page",
+      url: "leapliving.ae/contact",
+      file: "final-contact.webp",
+      w: 1440,
+      h: 1929,
+      pageRef: "screen-contact",
+      desc: "Low-friction advisory enquiry desk with Dubai office details and direct consultation channels."
+    },
+    {
+      id: "property-details",
+      num: "07",
+      title: "Property Details",
+      url: "leapliving.ae/buy/waterfront-sky-villa",
+      file: "final-property-details.webp",
+      w: 1440,
+      h: 1929,
+      featured: true,
+      desc: "Full listing view: gallery, key specifications, private viewing scheduler, highlights and Palm Jumeirah neighborhood map."
+    }
+  ];
+
   /* --------------------------------------------------------------- helpers */
 
   function el(html) {
@@ -314,7 +400,7 @@
 
   function countAssets(items) {
     return items.reduce(function (n, i) {
-      return n + (i.devices ? i.devices.length : i.figures ? i.figures.length : 0);
+      return n + (i.devices ? i.devices.length : i.figures ? i.figures.length : i.file ? 1 : 0);
     }, 0);
   }
 
@@ -392,8 +478,10 @@
         return (
           '<figure class="figure">' +
             '<div class="figure__box">' +
-              '<img src="' + IMG + f.file + '" alt="' + esc(state.title) + " — " + f.label + '" width="' +
-              f.w + '" height="' + f.h + '" loading="lazy" decoding="async">' +
+              '<button type="button" class="figure__trigger" aria-label="Expand ' + esc(state.title) + " — " + esc(f.label) + '">' +
+                '<img src="' + IMG + f.file + '" alt="' + esc(state.title) + " — " + f.label + '" width="' +
+                f.w + '" height="' + f.h + '" loading="lazy" decoding="async">' +
+              "</button>" +
             "</div>" +
             '<figcaption class="figure__caption"><span>' + esc(f.label) + "</span></figcaption>" +
           "</figure>"
@@ -419,18 +507,47 @@
     );
   }
 
+  /* ------------------------------------------------------- screen: finals */
+
+  function finalCard(item) {
+    var actionLink = item.pageRef
+      ? '<a class="final-card__link" href="#' + item.pageRef + '">Wireframe ↑</a>'
+      : '<span class="final-card__link" style="pointer-events:none">Listing view</span>';
+
+    return el(
+      '<article class="final-card reveal' + (item.featured ? " final-card--featured" : "") + '" id="screen-final-' + item.id + '" data-screen="final-' + item.id + '">' +
+        '<div class="final-card__bar">' +
+          '<span class="frame__dots" aria-hidden="true"><i></i><i></i><i></i></span>' +
+          '<span class="frame__url">' + esc(item.url) + "</span>" +
+          '<button class="frame__expand" type="button" data-expand-final aria-label="Expand ' + esc(item.title) + ' final look">Expand</button>' +
+        "</div>" +
+        '<div class="final-card__stage" tabindex="0" role="region" aria-label="' + esc(item.title) + ' — final visual preview">' +
+          '<img src="' + IMG + item.file + '" alt="' + esc(item.title) + ' — final visual direction" width="' + item.w + '" height="' + item.h + '" loading="lazy" decoding="async">' +
+        "</div>" +
+        '<div class="final-card__body">' +
+          '<div class="final-card__top">' +
+            '<h3 class="final-card__title"><span>' + item.num + "</span>" + esc(item.title) + "</h3>" +
+            actionLink +
+          "</div>" +
+          '<p class="final-card__desc">' + esc(item.desc) + "</p>" +
+        "</div>" +
+      "</article>"
+    );
+  }
+
   /* ------------------------------------------------------------- index nav */
 
-  function buildIndex(targetId, items) {
+  function buildIndex(targetId, items, prefix) {
     var host = document.getElementById(targetId);
     if (!host) return;
+    var pfx = prefix || "screen-";
     host.innerHTML =
       '<p class="index__label">On this page</p>' +
       '<nav class="index__list" aria-label="Screen index">' +
       items
         .map(function (i) {
           return (
-            '<a href="#screen-' + i.id + '" data-spy="screen-' + i.id + '">' +
+            '<a href="#' + pfx + i.id + '" data-spy="' + pfx + i.id + '">' +
             "<span>" + i.num + "</span>" + esc(i.title) + "</a>"
           );
         })
@@ -446,6 +563,7 @@
 
   var pagesHost = document.getElementById("pages-host");
   var statesHost = document.getElementById("states-host");
+  var finalHost = document.getElementById("final-host");
 
   if (pagesHost) {
     PAGES.forEach(function (p) { pagesHost.appendChild(pageCard(p)); });
@@ -453,9 +571,13 @@
   if (statesHost) {
     STATES.forEach(function (s) { statesHost.appendChild(stateCard(s)); });
   }
+  if (finalHost) {
+    FINALS.forEach(function (f) { finalHost.appendChild(finalCard(f)); });
+  }
 
   buildIndex("index-pages", PAGES);
   buildIndex("index-states", STATES);
+  buildIndex("index-final", FINALS, "screen-final-");
 
   /* ------------------------------------------------------- breakpoint tabs */
 
@@ -533,8 +655,16 @@
       });
     });
   });
+  FINALS.forEach(function (f) {
+    flat.push({
+      src: IMG + f.file,
+      title: f.title + " — Final Visual",
+      meta: f.url + " · " + f.w + "px"
+    });
+  });
 
   var lightbox = document.getElementById("lightbox");
+  var lightboxStage = lightbox.querySelector(".lightbox__stage");
   var lightboxImg = document.getElementById("lightbox-img");
   var lightboxTitle = document.getElementById("lightbox-title");
   var lightboxMeta = document.getElementById("lightbox-meta");
@@ -550,6 +680,7 @@
     lightboxImg.alt = flat[current].title;
     lightboxTitle.textContent = flat[current].title;
     lightboxMeta.textContent = flat[current].meta;
+    if (lightboxStage) lightboxStage.scrollTop = 0;
   }
 
   function openLightbox(i) {
@@ -567,12 +698,23 @@
   }
 
   // Every screen image opens the lightbox.
-  document.querySelectorAll(".frame__viewport img, .figure__box img").forEach(function (img) {
+  function openBySrc(src) {
+    var entry = null;
+    flat.forEach(function (f, i) { if (f.src === src) entry = i; });
+    openLightbox(entry === null ? 0 : entry);
+  }
+
+  document.querySelectorAll(".frame__viewport img, .final-card__stage img").forEach(function (img) {
     img.style.cursor = "zoom-in";
     img.addEventListener("click", function () {
-      var entry = null;
-      flat.forEach(function (f, i) { if (f.src === img.getAttribute("src")) entry = i; });
-      openLightbox(entry === null ? 0 : entry);
+      openBySrc(img.getAttribute("src"));
+    });
+  });
+
+  document.querySelectorAll(".figure__trigger").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var img = btn.querySelector("img");
+      if (img) openBySrc(img.getAttribute("src"));
     });
   });
 
@@ -581,7 +723,15 @@
     btn.addEventListener("click", function () {
       var frame = btn.closest("[data-frame]");
       var visible = frame ? frame.querySelector("[data-img]:not([hidden])") : null;
-      if (visible) visible.click();
+      if (visible) openBySrc(visible.getAttribute("src"));
+    });
+  });
+
+  document.querySelectorAll("[data-expand-final]").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var card = btn.closest(".final-card");
+      var img = card ? card.querySelector(".final-card__stage img") : null;
+      if (img) openBySrc(img.getAttribute("src"));
     });
   });
 
@@ -682,11 +832,37 @@
   /* ----------------------------------------------------------- present mode */
 
   var presentBtn = document.getElementById("present-toggle");
-  if (presentBtn) {
-    presentBtn.addEventListener("click", function () {
-      var on = document.body.classList.toggle("is-present");
+  var presentExit = document.getElementById("present-exit");
+
+  function setPresentMode(on) {
+    document.body.classList.toggle("is-present", on);
+    if (presentBtn) {
       presentBtn.textContent = on ? "Exit presentation" : "Presentation mode";
       presentBtn.setAttribute("aria-pressed", on ? "true" : "false");
+    }
+  }
+
+  if (presentBtn) {
+    presentBtn.addEventListener("click", function () {
+      setPresentMode(!document.body.classList.contains("is-present"));
     });
   }
+
+  if (presentExit) {
+    presentExit.addEventListener("click", function () {
+      setPresentMode(false);
+      if (presentBtn) presentBtn.focus();
+    });
+  }
+
+  document.addEventListener("keydown", function (e) {
+    if (
+      e.key === "Escape" &&
+      document.body.classList.contains("is-present") &&
+      !lightbox.classList.contains("is-open")
+    ) {
+      setPresentMode(false);
+      if (presentBtn) presentBtn.focus();
+    }
+  });
 })();

@@ -768,6 +768,16 @@ a {
   box-shadow: var(--shadow-1);
 }
 
+.figure__trigger {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  text-align: left;
+  cursor: zoom-in;
+}
+
 .figure__box img {
   width: 100%;
   height: auto;
@@ -1006,6 +1016,125 @@ a {
   letter-spacing: 0.04em;
 }
 
+/* ---------- Final visual direction ---------- */
+
+.final-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(20px, 2.8vw, 32px);
+}
+
+.final-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-1);
+  scroll-margin-top: 88px;
+  transition: transform 0.24s var(--ease), box-shadow 0.24s var(--ease),
+    border-color 0.24s var(--ease);
+}
+
+.final-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-2);
+  border-color: var(--line-strong);
+}
+
+.final-card--featured {
+  grid-column: 1 / -1;
+}
+
+.final-card__bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  background: #ecefee;
+  border-bottom: 1px solid var(--line);
+}
+
+.final-card__stage {
+  position: relative;
+  height: 460px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+  background: #e7ebe9;
+  scrollbar-width: thin;
+  scrollbar-color: var(--line-strong) transparent;
+}
+
+.final-card--featured .final-card__stage {
+  height: 580px;
+}
+
+.final-card__stage img {
+  width: 100%;
+  height: auto;
+  cursor: zoom-in;
+}
+
+.final-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 18px 20px 20px;
+  border-top: 1px solid var(--line);
+  background: var(--white);
+}
+
+.final-card__top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.final-card__title {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 640;
+  letter-spacing: -0.02em;
+}
+
+.final-card__title span {
+  font-family: var(--mono);
+  font-size: 11.5px;
+  font-weight: 500;
+  color: var(--teal-text);
+  letter-spacing: 0.08em;
+}
+
+.final-card__link {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--teal-text);
+  padding: 4px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  transition: background 0.15s var(--ease), border-color 0.15s var(--ease), color 0.15s var(--ease);
+}
+
+.final-card__link:hover {
+  background: var(--teal-dark);
+  border-color: var(--teal-dark);
+  color: var(--white);
+}
+
+.final-card__desc {
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
 /* ---------- Strategy ---------- */
 
 .strategy {
@@ -1150,15 +1279,15 @@ a {
   flex: 1 1 auto;
   min-height: 0;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   overflow: auto;
   border-radius: 10px;
+  padding: 4px;
 }
 
 .lightbox__stage img {
-  max-width: 100%;
-  max-height: calc(100vh - 190px);
+  max-width: min(100%, 1180px);
   width: auto;
   height: auto;
   border-radius: 8px;
@@ -1219,12 +1348,44 @@ a {
 
 /* ---------- Present mode ---------- */
 
+.present-exit {
+  display: none;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 140;
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(24, 92, 94, 0.94);
+  color: var(--white);
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  box-shadow: var(--shadow-2);
+  backdrop-filter: blur(8px);
+  transition: background 0.16s var(--ease), transform 0.16s var(--ease);
+}
+
+.present-exit:hover {
+  background: var(--ink);
+  transform: translateY(-1px);
+}
+
+body.is-present .present-exit {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
 body.is-present .topbar,
 body.is-present .index,
 body.is-present .screen__desc,
 body.is-present .notes,
 body.is-present .section__aside,
-body.is-present .frame__hint {
+body.is-present .frame__hint,
+body.is-present .final-card__desc {
   display: none !important;
 }
 
@@ -1309,6 +1470,10 @@ body.is-present .section {
   .frame--mobile {
     max-width: 100%;
   }
+
+  .final-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
 
 @media (max-width: 620px) {
@@ -1350,6 +1515,16 @@ body.is-present .section {
 
   .footer__meta {
     text-align: left;
+  }
+
+  .ratio {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .ratio span {
+    flex: none !important;
+    padding: 10px 12px;
   }
 
 }
